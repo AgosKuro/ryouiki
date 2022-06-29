@@ -1,0 +1,147 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url("https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg");
+	min-height: 100vh;
+	font-family: sans-serif;
+	padding: 20px;
+}
+div {
+	margin-left: auto;
+	margin-right: auto;
+}
+h1 {
+	font-size: 40px;
+	margin-top: -10px;
+	margin-bottom: 0px;
+}
+h2 {
+	font-size: 30px;
+	color: #7C3200;
+}
+h1, h2 {
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+}
+.published {
+	font-style: italic;
+}
+h1, h2, p {
+	text-align: center;
+}
+img  {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.menu {
+	width: 80%;
+	background-color: burlywood;
+	padding: 20px 20px 20px 20px;
+	max-width: 500px;
+}
+.item {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.flavor {
+	display: inline-block;
+	text-align: left;
+	width: 75%;
+	margin-top: 5px;
+    margin-bottom: 5px;
+}
+.price {
+	display: inline-block;
+	text-align: right;
+	width: 25%;
+	margin-top: 5px;
+    margin-bottom: 5px;
+}
+/* FOOTER */
+footer {
+	text-align: center;
+}
+.name {
+	font-size: 14px;
+	margin: 15px 30px;
+}
+.button {
+	font-size: 1.5em;
+}
+a, h2 {
+	position: relative;
+	background: #27282c;
+	text-decoration: none;
+	font-size: 16px;
+	padding: 8px 15px;
+	transition: 0.5s;
+}
+a, a:visited {
+	color: black;
+}
+a:hover, h2:hover{
+	letter-spacing: 0.25em;
+	background: var(--clr);
+	color: var(--clr);
+	box-shadow: 0 0 35px var(--clr);
+	cursor: pointer;
+}
+h2::hover {
+	font-size: 20px;
+	box-sizing: border-box;
+}
+a::before, h2::before {
+	content: '';
+	position: absolute;
+	inset: 2px;
+	background:#DEB887;
+}
+a span, h2 span {
+	position: relative;
+	z-index: 1;
+}
+a i {
+	position: absolute;
+	inset: 0;
+	display: block;
+}
+a i::before {
+	content: '';
+	position: absolute;
+	top: -3.5px;
+	left: 80%;
+	width: 6px;
+	height: 5px;
+	border: 2px solid var(--clr);
+	background: burlywood;
+	transition: 0.5s;
+}
+a:hover i::before {
+	width: 10px;
+	left: 20%;
+}
+a i::after {
+	content: '';
+	position: absolute;
+	bottom: -3.5px;
+	left: 20%;
+	width: 6px;
+	height: 5px;
+	border: 2px solid var(--clr);
+	background: burlywood;
+	transform: translate(-50%);
+	transition: 0.5s;
+}
+a:hover i::after {
+	width: 10px;
+	left: 80%;
+}
